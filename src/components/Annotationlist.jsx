@@ -12,7 +12,9 @@ const Annotationlist = ({ category }) => {
             category.map((c, i) => (
               <li key={i} className="flex justify-between item-center">
                 <span>{c}</span>
-                <span>X</span>
+                <label htmlFor="my-modal-6" className="btn modal-button">
+                  <span>X</span>
+                </label>
               </li>
             ))}
         </ul>

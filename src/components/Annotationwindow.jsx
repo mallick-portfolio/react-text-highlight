@@ -1,4 +1,5 @@
 import Highlighter from "react-highlight-words";
+import RemoveCategory from "./RemoveCategory.jsx";
 const Annotationwindow = ({ records, selected, setCategory, category }) => {
   return (
     <div className="border w-2/4">
@@ -29,6 +30,7 @@ const Annotationwindow = ({ records, selected, setCategory, category }) => {
               textToHighlight={record.content}
             />
             {record.content}
+            <RemoveCategory category={category} setCategory={setCategory} record={record} />
           </div>
         ))}
       </div>
